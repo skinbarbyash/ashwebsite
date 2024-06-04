@@ -1,0 +1,103 @@
+/* Main title styling */
+.main-title{
+    font-family: 'Agatho';
+    text-align: center;
+    padding-bottom: 30px;
+ }
+
+.main-title h1{
+    color: #6A5C50;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5px;
+    font-size: 40px;
+ }
+/* ------------------------------ */
+/* ------------------------------ */
+/* Dark Facial Page */
+.darkfacial-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+h1{
+    font-family: 'Agatho';
+    color: #D0B49E;
+    font-size: 32px;
+}
+
+.fp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.fp-left{
+    padding-right: 20px;
+    text-align: left;
+}
+
+.fp-left p{
+    padding-top: 15px;
+}
+
+.fp-right{
+    text-align: right;
+    border-left: 2px solid #D0B49E;
+    padding-left: 20px;
+}
+
+.fp-right p{
+    padding-top: 15px;
+}
+
+.price{
+    color: #D0B49E;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* White Facial Page */
+ .whitefacial-page{
+    padding: 30px 10%;
+ } 
+
+ .add-h1{
+    font-size: 25px;
+ }
+
+ .holder{
+    opacity: 0;
+ }
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* ------------------------------ */
+ /* Responsive Code */
+@media screen and (max-width: 780px) {
+    .fp-left p{
+        font-size: 14px;
+    }
+
+    .fp-right p{
+        font-size: 14px;
+    }
+ } 
+
+ @media screen and (max-width: 480px) {
+    .main-title h1{
+        font-size: 30px;
+     }
+
+    .fp-left h1{
+        font-size: 20px;
+    }
+
+    .fp-right h1{
+        font-size: 18px;
+    }
+
+    .add-h1{
+        padding-top: 15px;
+    }
+ }
+
+

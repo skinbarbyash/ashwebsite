@@ -1,0 +1,145 @@
+.shop-page-land{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.shop-page-land h1{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 32px;
+}
+
+.shop-page-land h3{
+    padding-top: 15px;
+}
+
+.shop-page-land p{
+    text-align: justify;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+#last-p{
+    padding-top: 0px;
+}
+
+.shop-page-land-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding-top: 30px;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+.shop-page{
+    padding: 30px 10%;
+}
+
+.shop-page h1{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 32px;
+}
+
+.sp-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    padding-top: 15px;
+}
+
+.store-info{
+    background-color: #D0B49E;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative; 
+    overflow: hidden; 
+    transition: all 0.5s ease-in-out; 
+    min-height: 450px; 
+}
+
+.hide{
+    opacity: 0; 
+    max-height: 0; 
+    overflow: hidden; 
+    transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;  
+}
+
+.store-info:hover{
+    transform: scale(1.03); 
+}
+
+.store-info:hover .hide{
+    opacity: 1; 
+    max-height: 2000px; 
+}
+
+.store-info img{
+    max-width: 100%;
+    height: 15vh; 
+    object-fit: contain; 
+}
+
+.store-info p{
+    color: black;
+    padding-top: 15px;
+    font-size: 16px;
+}
+
+.warn{
+    padding-top: 15px;
+    text-align: center;
+}
+
+.warn i{
+    font-family: 'Agatho';
+    font-size: 25px;
+    color: #D0B49E;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 1100px) {
+    .sp-grid{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .shop-page-land p{
+        text-align: left;
+    }
+
+    .store-info.active{
+        transform: none; 
+    }
+
+    /* Hover Change Code */
+    .store-info:hover{
+        transform: none; 
+    }
+    
+    .store-info:hover .hide{
+        opacity: 0; 
+        max-height: 0; 
+    }
+
+    .store-info.active{
+        transform: scale(1.03); 
+    }
+    
+    .store-info.active .hide{
+        opacity: 1; 
+        max-height: 2000px; 
+    }
+}
+
+
+

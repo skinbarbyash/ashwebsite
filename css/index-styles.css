@@ -1,0 +1,261 @@
+/* Landing Page */
+.landing-page {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+}
+
+.landing-page img{
+    width: 100%;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Landing Page 2 */
+.landing-page-2{
+    padding: 30px 10%;
+}
+
+.lp-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lp-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lp-left h1,h3{
+    font-family: 'Agatho';
+    font-weight: 100;
+    text-align: left;
+}
+
+.lp-left h1{
+    font-size: 50px;
+    line-height: 0.8;
+}
+
+.lp-left h3{
+    padding-top: 20px;
+    font-size: 34px;
+    font-family: 'Cursive Serif';
+}
+
+.lp-button-div{
+    display: flex;
+    justify-content: left;
+    gap: 10px; 
+    padding-top: 25px;
+}
+
+.lp-button{
+    margin-left: 0px;
+}
+
+.lp-right{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.lp-right img{
+    max-width: 100%;
+    max-height: 500px; 
+    object-fit: contain; 
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* Template Code */
+.page-h1{
+    font-family: 'Agatho';
+    text-align: center;
+    font-size: 32px;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* About Page */
+.about-page{
+    padding: 30px 10%;
+    background-color: #FAFAFA;
+}
+
+.ap-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.ap-left{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.ap-left img{
+    max-width: 100%;
+    max-height: 600px; 
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.ap-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.ap-right p{
+    line-height: 2;
+    padding: 25px;
+    text-align: justify;
+    font-size: 16px;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+.treatment-page{
+    padding: 30px 10%;
+}
+
+.tp-main-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.tp-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tp-left p{
+    line-height: 2;
+    padding: 25px;
+    text-align: justify;
+    font-size: 16px;
+}
+
+.tp-right{
+    display: flex;
+    justify-content: end;
+    align-content: center;
+}
+
+.tp-right img{
+    max-width: 100%;
+    max-height: 600px; 
+    object-fit: contain;
+    border-radius: 20px;
+}
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+/* Responsive Code */
+@media screen and (max-width: 1100px) {
+    /* About Page */
+    .ap-right p{
+        text-align: left;
+        font-size: 15px;
+    }
+
+
+    /* Treatment Page */
+    .tp-left p{
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    /* Landing Page */
+    .lp-main-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .lp-left{
+        align-items: center;
+    }
+
+    .lp-left h1,h3{
+        text-align: center;
+    }
+
+    .lp-right{
+        justify-content: center;
+    }
+
+
+    /* About Page */
+    .ap-main-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .ap-left{
+        justify-content: center;
+    }
+    
+    .ap-right{
+        padding-top: 15px;
+    }
+    
+    .ap-right p{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+
+    /* Treatment Page */
+    .tp-main-grid{
+        grid-template-columns: 1fr;
+    }
+    
+    .tp-left{
+        order: 3;
+        padding-top: 15px;
+    }
+    
+    .tp-left p{
+        text-align: justify;
+        font-size: 16px;
+    }
+    
+    .tp-right{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Landing Page */
+    .lp-left h1{
+        font-size: 30px;
+    }
+
+    .lp-left h3{
+        font-size: 20px;
+    }
+
+    .lp-button-div button{
+        font-size: 12px;
+    }
+
+    .lp-right{
+        padding-top: 15px;
+    }
+
+
+    /* About Page */
+    .ap-right p{
+        text-align: left;
+    }
+
+
+    /* Treatment Page */
+    .tp-left p{
+        text-align: left;
+    }
+
+}
